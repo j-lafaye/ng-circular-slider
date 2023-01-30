@@ -1,0 +1,56 @@
+<output
+  class="app-circular-slider-output">
+
+  <div
+    class="app-circular-slider-value-container">
+
+    <div
+      class="app-circular-slider-value">
+
+      <span>{{value}}</span>
+
+      <span
+        class="app-circular-slider-base-value"
+        *ngIf="units">{{units}}</span>
+
+    </div>
+
+  </div>
+
+</output>
+
+<svg
+  aria-hidden="true"
+  class="app-circular-slider-svg"
+  fill="none"
+  focusable="false"
+  id="svg"
+  viewBox="0 0 320 320"
+  xmlns="http://www.w3.org/2000/svg"
+  stroke="black"
+  stroke-width="1">
+
+  <circle
+    class="app-circular-slider-track"
+    cx="160"
+    cy="160"
+    id="track"
+    r="128"/>
+
+  <circle
+    class="app-circular-slider-progress"
+    cx="338"
+    cy="158"
+    id="progress"
+    r="125"
+    stroke="blue"
+    stroke-width="6"
+    transform="rotate(-90 249.85 248.065)"/>
+
+  <circle
+    class="app-circular-slider-thumb"
+    id="thumb"
+    r="20"
+    fill="red"/>
+
+</svg>
